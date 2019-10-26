@@ -7,6 +7,7 @@ import SideBar from "./SideBar";
 import FloorPlan from "./FloorPlan";
 import Settings from "./Settings";
 import Dashboard from "./Dashboard";
+import CameraDemo from './CameraDemo';
 
 import CameraDemo from "./CameraDemo";
 
@@ -21,7 +22,7 @@ export default class App extends Component {
 
             <Switch>
               <Route exact path="/">
-                <FloorPlan />
+                <CameraDemo />
               </Route>
               <Route exact path="/dashboard">
                 <Dashboard />

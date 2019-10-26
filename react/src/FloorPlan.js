@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import floorPlan from "./assets/img/apm_floor_plan.svg";
 import cameraIcon from "./assets/img/icon/camera.svg";
+import warningIcon from './assets/img/icon/warning.svg';
 
 export default class FloorPlan extends Component {
   render() {
@@ -13,7 +14,7 @@ export default class FloorPlan extends Component {
             <div className="floor-plan-container">
               <img src={floorPlan} alt="floor plan" className="w-100" />
               <div className="cam cam--1 js-cam">
-                <img src={cameraIcon} alt="cam icon" />
+                <img src={warningIcon} alt="cam icon" />
               </div>
               <div className="cam cam--2 js-cam">
                 <img src={cameraIcon} alt="cam icon" />
