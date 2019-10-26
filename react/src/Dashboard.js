@@ -5,7 +5,7 @@ export default class FloorPlan extends Component {
   render() {
     return (
       <>
-        <div class="panel-header panel-header-lg">
+        <div className="panel-header panel-header-lg">
           <canvas id="bigDashboardChart"></canvas>
         </div>
         <div className="content">

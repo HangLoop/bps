@@ -1,7 +1,9 @@
 import React, { Component } from "react";
+import { Link, withRouter } from "react-router-dom";
 
-export default class NavBar extends Component {
+class SideBar extends Component {
   render() {
+    const pathname = this.props.location.pathname;
     return (
       <>
         <div className="sidebar" data-color="blue">
@@ -10,23 +12,23 @@ export default class NavBar extends Component {
           </div>
           <div className="sidebar-wrapper" id="sidebar-wrapper">
             <ul className="nav">
-              <li className="active ">
-                <a href="./index.html">
+              <li className={pathname === "/" ? "active" : ""}>
+                <Link to="/">
                   <i className="now-ui-icons location_map-big"></i>
                   <p>Floor Plan</p>
-                </a>
+                </Link>
               </li>
-              <li>
-                <a href="./pages/dashboard.html">
+              <li className={pathname === "/dashboard" ? "active" : ""}>
+                <Link to="/dashboard">
                   <i className="now-ui-icons design_app"></i>
                   <p>Dashboard</p>
-                </a>
+                </Link>
               </li>
-              <li>
-                <a href="./pages/settings.html">
+              <li className={pathname === "/settings" ? "active" : ""}>
+                <Link to="/settings">
                   <i className="now-ui-icons ui-1_settings-gear-63"></i>
                   <p>Settings</p>
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -35,3 +37,5 @@ export default class NavBar extends Component {
     );
   }
 }
+
+export default withRouter(SideBar);
