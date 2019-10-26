@@ -120,8 +120,23 @@
       <div class="panel-header panel-header-sm">
       </div>
       <div class="content">
-        <div class="card floor-plan-container">
-          <img src="./assets/img/apm_floor_plan.svg" alt="floor plan" class="w-100">
+        <div class="card">
+          <h3 class="m-3 w-100 text-center">Ground Floor</h3>
+          <div class="floor-plan-container">
+            <img src="./assets/img/apm_floor_plan.svg" alt="floor plan" class="w-100">
+            <div class="cam cam--1 js-cam">
+              <img src="./assets/img/icon/camera.svg" alt="cam icon">
+            </div>
+            <div class="cam cam--2 js-cam">
+              <img src="./assets/img/icon/camera.svg" alt="cam icon">
+            </div>
+            <div class="cam cam--3 js-cam">
+              <img src="./assets/img/icon/camera.svg" alt="cam icon">
+            </div>
+            <div class="cam cam--4 js-cam">
+              <img src="./assets/img/icon/camera.svg" alt="cam icon">
+            </div>
+          </div>
         </div>
       </div>
       <!-- <div class="content">
@@ -406,8 +421,8 @@
   <script>
     $(document).ready(function() {
       // Javascript method's body can be found in assets/js/demos.js
-      demo.initDashboardPageCharts();
-
+      // demo.initDashboardPageCharts();
+      demo.initCamICon();
     });
   </script>
 </body>

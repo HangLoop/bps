@@ -3887,6 +3887,24 @@ Created using IcoMoon - icomoon.io
     -webkit-overflow-scrolling: touch; } }
 
 .floor-plan-container {
-  padding: 100px; }
+  padding: 1em;
+  margin: auto;
+  position: relative;
+  width: 738px; }
+
+.cam {
+  position: absolute; }
+  .cam--1 {
+    top: 1rem;
+    left: 10rem; }
+  .cam--2 {
+    top: 19rem;
+    left: 26rem; }
+  .cam--3 {
+    top: 12rem;
+    left: 40rem; }
+  .cam--4 {
+    top: 26rem;
+    left: 3rem; }
 
 /*# sourceMappingURL=now-ui-dashboard.css.map */
