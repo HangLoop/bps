@@ -33,28 +33,22 @@
       </div>
       <div class="sidebar-wrapper" id="sidebar-wrapper">
         <ul class="nav">
-          <li class="active ">
-            <a href="./index.html">
+          <li>
+            <a href="../index.html">
               <i class="now-ui-icons design_app"></i>
               <p>Floor Plan</p>
             </a>
           </li>
-          <li>
+          <li class="active">
             <a href="./dashboard.html">
               <i class="now-ui-icons education_atom"></i>
               <p>Dashboard</p>
             </a>
           </li>
           <li>
-            <a href="./pages/settings.html">
+            <a href="./settings.html">
               <i class="now-ui-icons users_single-02"></i>
               <p>Settings</p>
-            </a>
-          </li>
-          <li>
-            <a href="./pages/notifications-center.html">
-              <i class="now-ui-icons ui-1_bell-53"></i>
-              <p>Notifications</p>
             </a>
           </li>
         </ul>
@@ -130,27 +124,13 @@
       </div>
       <div class="content">
         <div class="row">
-          <div class="col-lg-4">
+          <div class="col-lg-12">
             <div class="card card-chart">
               <div class="card-header">
-                <h5 class="card-category">Global Sales</h5>
-                <h4 class="card-title">Shipped Products</h4>
-                <div class="dropdown">
-                  <button type="button" class="btn btn-round btn-outline-default dropdown-toggle btn-simple btn-icon no-caret" data-toggle="dropdown">
-                    <i class="now-ui-icons loader_gear"></i>
-                  </button>
-                  <div class="dropdown-menu dropdown-menu-right">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                    <a class="dropdown-item text-danger" href="#">Remove Data</a>
-                  </div>
-                </div>
+                <h4 class="card-title">Current No. of Vistors</h4>
               </div>
               <div class="card-body">
-                <div class="chart-area">
-                  <canvas id="lineChartExample"></canvas>
-                </div>
+                <h2 class="card-title">1984</h2>
               </div>
               <div class="card-footer">
                 <div class="stats">
@@ -159,40 +139,12 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6">
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
             <div class="card card-chart">
               <div class="card-header">
-                <h5 class="card-category">2018 Sales</h5>
-                <h4 class="card-title">All products</h4>
-                <div class="dropdown">
-                  <button type="button" class="btn btn-round btn-outline-default dropdown-toggle btn-simple btn-icon no-caret" data-toggle="dropdown">
-                    <i class="now-ui-icons loader_gear"></i>
-                  </button>
-                  <div class="dropdown-menu dropdown-menu-right">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                    <a class="dropdown-item text-danger" href="#">Remove Data</a>
-                  </div>
-                </div>
-              </div>
-              <div class="card-body">
-                <div class="chart-area">
-                  <canvas id="lineChartExampleWithNumbersAndGrid"></canvas>
-                </div>
-              </div>
-              <div class="card-footer">
-                <div class="stats">
-                  <i class="now-ui-icons arrows-1_refresh-69"></i> Just Updated
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="card card-chart">
-              <div class="card-header">
-                <h5 class="card-category">Email Statistics</h5>
-                <h4 class="card-title">24 Hours Performance</h4>
+                <h4 class="card-title">No. of Incidents</h4>
               </div>
               <div class="card-body">
                 <div class="chart-area">
@@ -201,7 +153,7 @@
               </div>
               <div class="card-footer">
                 <div class="stats">
-                  <i class="now-ui-icons ui-2_time-alarm"></i> Last 7 days
+                  <i class="now-ui-icons ui-2_time-alarm"></i> Last 12 hours
                 </div>
               </div>
             </div>
@@ -209,81 +161,49 @@
         </div>
         <div class="row">
           <div class="col-md-6">
-            <div class="card  card-tasks">
-              <div class="card-header ">
-                <h5 class="card-category">Backend development</h5>
-                <h4 class="card-title">Tasks</h4>
+            <div class="card">
+              <div class="card-header">
+                <h4 class="card-title"> Robots Status</h4>
               </div>
-              <div class="card-body ">
-                <div class="table-full-width table-responsive">
+              <div class="card-body">
+                <div class="table-responsive">
                   <table class="table">
+                    <thead class=" text-primary">
+                      <th>
+                        ID
+                      </th>
+                      <th>
+                        Type
+                      </th>
+                      <th>
+                        Status
+                      </th>
+                    </thead>
                     <tbody>
                       <tr>
                         <td>
-                          <div class="form-check">
-                            <label class="form-check-label">
-                              <input class="form-check-input" type="checkbox" checked>
-                              <span class="form-check-sign"></span>
-                            </label>
-                          </div>
+                          1
                         </td>
-                        <td class="text-left">Sign contract for "What are conference organizers afraid of?"</td>
-                        <td class="td-actions text-right">
-                          <button type="button" rel="tooltip" title="" class="btn btn-info btn-round btn-icon btn-icon-mini btn-neutral" data-original-title="Edit Task">
-                            <i class="now-ui-icons ui-2_settings-90"></i>
-                          </button>
-                          <button type="button" rel="tooltip" title="" class="btn btn-danger btn-round btn-icon btn-icon-mini btn-neutral" data-original-title="Remove">
-                            <i class="now-ui-icons ui-1_simple-remove"></i>
-                          </button>
+                        <td>
+                          Cleaning
+                        </td>
+                        <td>
+                          Stand By
                         </td>
                       </tr>
                       <tr>
                         <td>
-                          <div class="form-check">
-                            <label class="form-check-label">
-                              <input class="form-check-input" type="checkbox">
-                              <span class="form-check-sign"></span>
-                            </label>
-                          </div>
+                          2
                         </td>
-                        <td class="text-left">Lines From Great Russian Literature? Or E-mails From My Boss?</td>
-                        <td class="td-actions text-right">
-                          <button type="button" rel="tooltip" title="" class="btn btn-info btn-round btn-icon btn-icon-mini btn-neutral" data-original-title="Edit Task">
-                            <i class="now-ui-icons ui-2_settings-90"></i>
-                          </button>
-                          <button type="button" rel="tooltip" title="" class="btn btn-danger btn-round btn-icon btn-icon-mini btn-neutral" data-original-title="Remove">
-                            <i class="now-ui-icons ui-1_simple-remove"></i>
-                          </button>
-                        </td>
-                      </tr>
-                      <tr>
                         <td>
-                          <div class="form-check">
-                            <label class="form-check-label">
-                              <input class="form-check-input" type="checkbox" checked>
-                              <span class="form-check-sign"></span>
-                            </label>
-                          </div>
+                          First Aid
                         </td>
-                        <td class="text-left">Flooded: One year later, assessing what was lost and what was found when a ravaging rain swept through metro Detroit
-                        </td>
-                        <td class="td-actions text-right">
-                          <button type="button" rel="tooltip" title="" class="btn btn-info btn-round btn-icon btn-icon-mini btn-neutral" data-original-title="Edit Task">
-                            <i class="now-ui-icons ui-2_settings-90"></i>
-                          </button>
-                          <button type="button" rel="tooltip" title="" class="btn btn-danger btn-round btn-icon btn-icon-mini btn-neutral" data-original-title="Remove">
-                            <i class="now-ui-icons ui-1_simple-remove"></i>
-                          </button>
+                        <td>
+                          On the road
                         </td>
                       </tr>
                     </tbody>
                   </table>
-                </div>
-              </div>
-              <div class="card-footer ">
-                <hr>
-                <div class="stats">
-                  <i class="now-ui-icons loader_refresh spin"></i> Updated 3 minutes ago
                 </div>
               </div>
             </div>
@@ -291,95 +211,94 @@
           <div class="col-md-6">
             <div class="card">
               <div class="card-header">
-                <h5 class="card-category">All Persons List</h5>
-                <h4 class="card-title"> Employees Stats</h4>
+                <h4 class="card-title">Incidents logs</h4>
               </div>
               <div class="card-body">
                 <div class="table-responsive">
                   <table class="table">
                     <thead class=" text-primary">
                       <th>
-                        Name
+                        ID
                       </th>
                       <th>
-                        Country
+                        Time
                       </th>
                       <th>
-                        City
+                        Incidents
                       </th>
                       <th class="text-right">
-                        Salary
+                        Status
                       </th>
                     </thead>
                     <tbody>
                       <tr>
                         <td>
-                          Dakota Rice
+                          42
                         </td>
                         <td>
-                          Niger
+                          19:30
                         </td>
                         <td>
-                          Oud-Turnhout
+                          Falling Over
                         </td>
                         <td class="text-right">
-                          $36,738
+                          Solved
                         </td>
                       </tr>
                       <tr>
                         <td>
-                          Minerva Hooper
+                          41
                         </td>
                         <td>
-                          Curaçao
+                          18:55
                         </td>
                         <td>
-                          Sinaai-Waas
+                          Dog Detected
                         </td>
                         <td class="text-right">
-                          $23,789
+                          Solved
                         </td>
                       </tr>
                       <tr>
                         <td>
-                          Sage Rodriguez
+                          40
                         </td>
                         <td>
-                          Netherlands
+                          18:27
                         </td>
                         <td>
-                          Baileux
+                          Smoking
                         </td>
                         <td class="text-right">
-                          $56,142
+                          Solved
                         </td>
                       </tr>
                       <tr>
                         <td>
-                          Doris Greene
+                          39
                         </td>
                         <td>
-                          Malawi
+                          17:52
                         </td>
                         <td>
-                          Feldkirchen in Kärnten
+                          Conflict
                         </td>
                         <td class="text-right">
-                          $63,542
+                          Solved
                         </td>
                       </tr>
                       <tr>
                         <td>
-                          Mason Porter
+                          38
                         </td>
                         <td>
-                          Chile
+                          17:20
                         </td>
                         <td>
-                          Gloucester
+                          Rubbish bin #5 almost full
                         </td>
                         <td class="text-right">
-                          $78,615
+                          Solved
                         </td>
                       </tr>
                     </tbody>
