@@ -130,7 +130,7 @@
                 <h4 class="card-title">Current No. of Vistors</h4>
               </div>
               <div class="card-body">
-                <h2 class="card-title">1984</h2>
+                <h2 class="card-title" id="vistorsNo">1984</h2>
               </div>
               <div class="card-footer">
                 <div class="stats">
@@ -358,10 +358,15 @@
   <!-- Now Ui Dashboard DEMO methods, don't include it in your project! -->
   <script src="../assets/demo/demo.js"></script>
   <script>
+    function getRandomArbitrary(min, max) {
+      return Math.floor(Math.random() * (max - min) + min);
+    }
     $(document).ready(function() {
       // Javascript method's body can be found in assets/js/demos.js
       demo.initDashboardPageCharts();
-
+      window.setInterval(function() {
+        $('#vistorsNo').text(getRandomArbitrary(1900,2100))
+      },1500)
     });
   </script>
 </body>
