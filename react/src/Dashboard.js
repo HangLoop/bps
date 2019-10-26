@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 export default class FloorPlan extends Component {
   render() {
@@ -17,7 +17,8 @@ export default class FloorPlan extends Component {
               </div>
               <div className="card-footer">
                 <div className="stats">
-                  <i className="now-ui-icons arrows-1_refresh-69"></i> Just Updated
+                  <i className="now-ui-icons arrows-1_refresh-69"></i> Just
+                  Updated
                 </div>
               </div>
             </div>
@@ -52,9 +53,11 @@ export default class FloorPlan extends Component {
                 <div className="table-responsive">
                   <table className="table">
                     <thead className=" text-primary">
-                      <th>ID</th>
-                      <th>Type</th>
-                      <th>Status</th>
+                      <tr>
+                        <th>ID</th>
+                        <th>Type</th>
+                        <th>Status</th>
+                      </tr>
                     </thead>
                     <tbody>
                       <tr>
@@ -82,10 +85,12 @@ export default class FloorPlan extends Component {
                 <div className="table-responsive">
                   <table className="table">
                     <thead className=" text-primary">
-                      <th>ID</th>
-                      <th>Time</th>
-                      <th>Incidents</th>
-                      <th className="text-right">Status</th>
+                      <tr>
+                        <th>ID</th>
+                        <th>Time</th>
+                        <th>Incidents</th>
+                        <th className="text-right">Status</th>
+                      </tr>
                     </thead>
                     <tbody>
                       <tr>
