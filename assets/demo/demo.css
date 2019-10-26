@@ -61,3 +61,31 @@
   max-width: 530px;
   margin: 0 auto;
 }
+
+.disabledButton
+{
+  background-color: #FFF;
+  color: #999 !important;
+  box-shadow: none;
+}
+
+.disabledButton:hover
+{
+  background-color: #FFF;
+  color: #999 !important;
+  box-shadow: none;
+}
+
+.disabledButton:focus
+{
+  background-color: #FFF;
+  color: #999 !important;
+  box-shadow: none;
+}
+
+.disabledButton:active
+{
+  background-color: #FFF;
+  color: #999 !important;
+  box-shadow: none;
+}
