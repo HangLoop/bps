@@ -125,10 +125,10 @@
           <div class="floor-plan-container">
             <img src="./assets/img/apm_floor_plan.svg" alt="floor plan" class="w-100">
             <div class="cam cam--1 js-cam-1"  data-toggle="modal" data-target="#cam1Content">
-              <img src="./assets/img/icon/camera.svg" alt="cam icon">
+              <img src="./assets/img/icon/warning.svg" alt="cam icon">
             </div>
             <div class="cam cam--2 cam--warning js-cam-2" data-toggle="modal" data-target="#cam2Content">
-              <img src="./assets/img/icon/warning.svg" alt="cam icon">
+              <img src="./assets/img/icon/camera.svg" alt="cam icon">
             </div>
             <div class="cam cam--3 js-cam-3" data-toggle="modal" data-target="#cam3Content">
               <img src="./assets/img/icon/camera.svg" alt="cam icon">
@@ -159,12 +159,28 @@
         </button>
       </div>
       <div class="modal-body">
-        <div class="row no-gutter">
+        <div class="row no-gutters">
           <div class="col-7">
             <img src="./assets/img/mall.gif" alt="">
           </div>
           <div class="col-5">
-            <img src="./assets/img/sending-bot.png" alt="" class="w-100">
+            <div class="row border rounded-lg shadow-sm bg-light no-gutters">
+              <div class="col">
+                <div class="p-3">
+                  <p>
+                    Sending bot over
+                  </p>
+                  <div>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal" aria-label="Close">
+                      Abort
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <iv class="col">
+              	<img src="./assets/img/sending-bot.gif" alt="" class="w-100">
+              </iv>
+            </div>
           </div>
           <div class="col-12">
             <div class="row">
