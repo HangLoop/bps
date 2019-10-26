@@ -124,16 +124,16 @@
           <h3 class="m-3 w-100 text-center">Ground Floor</h3>
           <div class="floor-plan-container">
             <img src="./assets/img/apm_floor_plan.svg" alt="floor plan" class="w-100">
-            <div class="cam cam--1 js-cam">
+            <div class="cam cam--1 js-cam"  data-toggle="modal" data-target="#cam1Content">
               <img src="./assets/img/icon/camera.svg" alt="cam icon">
             </div>
-            <div class="cam cam--2 js-cam">
+            <div class="cam cam--2 js-cam" data-toggle="modal" data-target="#cam2Content">
               <img src="./assets/img/icon/camera.svg" alt="cam icon">
             </div>
-            <div class="cam cam--3 js-cam">
+            <div class="cam cam--3 js-cam" data-toggle="modal" data-target="#cam3Content">
               <img src="./assets/img/icon/camera.svg" alt="cam icon">
             </div>
-            <div class="cam cam--4 js-cam">
+            <div class="cam cam--4 js-cam" data-toggle="modal" data-target="#cam4Content">
               <img src="./assets/img/icon/camera.svg" alt="cam icon">
             </div>
           </div>
@@ -141,13 +141,95 @@
       </div>
     </div>
   </div>
+<!-- Modal 1 -->
+<div class="modal fade" id="cam1Content" tabindex="-1" role="dialog" aria-labelledby="cam1Content" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Modal 1 title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 2 -->
+<div class="modal fade" id="cam2Content" tabindex="-1" role="dialog" aria-labelledby="cam2Content" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Modal 2 title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 3 -->
+<div class="modal fade" id="cam3Content" tabindex="-1" role="dialog" aria-labelledby="cam3Content" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Modal 3 title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 4 -->
+<div class="modal fade" id="cam4Content" tabindex="-1" role="dialog" aria-labelledby="cam4Content" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Modal 4 title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
   <!--   Core JS Files   -->
   <script src="../assets/js/core/jquery.min.js"></script>
   <script src="../assets/js/core/popper.min.js"></script>
   <script src="../assets/js/core/bootstrap.min.js"></script>
   <script src="../assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
-  <!--  Google Maps Plugin    -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+
   <!-- Chart JS -->
   <script src="../assets/js/plugins/chartjs.min.js"></script>
   <!--  Notifications Plugin    -->
@@ -161,6 +243,7 @@
       // Javascript method's body can be found in assets/js/demos.js
       // demo.initDashboardPageCharts();
       demo.initCamIcon();
+      
     });
   </script>
 </body>
