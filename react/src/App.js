@@ -16,7 +16,7 @@ export default class App extends Component {
           <NavBar />
           {/* <div className="panel-header panel-header-sm"></div> */}
           {/* <div className="content"> */}
-          <Dashboard />
+          <Settings />
           {/* </div> */}
         </div>
       </div>
