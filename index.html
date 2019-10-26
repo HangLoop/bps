@@ -151,7 +151,7 @@
             <h5 class="modal-title" id="exampleModalCenterTitle" style="color: red">ALERT</h5>
           </div>
           <div>
-            <h5><b>RUBBISH</b> Detected at South Entrance</h5>
+            <h5><b>RUBBISH</b> Detected at <b>South Entrance</b> at <b id="time1"></b></h5>
           </div>
         </div>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -172,7 +172,6 @@
               </div>
               <div class="col-6 text-right">
                 <button type="button" class="btn btn-outline-danger">Send Staff</button>
-                <button type="button" class="btn btn-outline-danger">Contact Police</button>
               </div>
             </div>
           </div>
@@ -187,18 +186,29 @@
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalCenterTitle">Modal 2 title</h5>
+        <div>
+        <h5><b>CROWD</b> Detected at <b>Center</b><br> at <b id="time2"></b></h5>
+        </div>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
+          <div class="row no-gutter">
+            <div class="col-12">
+              <img src="./assets/img/crowd.gif" alt="">
+            </div>
+            <div class="col-12">
+              <div class="row">
+                <div class="col-6">
+                </div>
+                <div class="col-6 text-right">
+                  <button type="button" class="btn btn-outline-danger">Send Staff</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
     </div>
   </div>
 </div>
@@ -259,11 +269,28 @@
   <!-- Now Ui Dashboard DEMO methods, don't include it in your project! -->
   <script src="../assets/demo/demo.js"></script>
   <script>
+    function pad(n, width, z) {
+      z = z || '0';
+      n = n + '';
+      return n.length >= width ? n : new Array(width - n.length + 1).join(z) + n;
+    }
+    function getCurrentTime() {
+      var today = new Date();
+      var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+      var time = pad(today.getHours(),2) + ':' + pad(today.getMinutes(),2) + ':' + pad(today.getSeconds(),2);
+      return time + ' ' + date;
+    }
     $(document).ready(function() {
       // Javascript method's body can be found in assets/js/demos.js
       // demo.initDashboardPageCharts();
       demo.initCamIcon();
       demo.initBindKey();
+      $('#cam1Content').on('shown.bs.modal', function(){
+        $('#time1').text(getCurrentTime());
+      });
+      $('#cam2Content').on('shown.bs.modal', function(){
+        $('#time2').text(getCurrentTime());
+      });
     });
   </script>
 </body>
