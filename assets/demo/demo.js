@@ -445,7 +445,7 @@ demo = {
     var viewsChart = new Chart(e, a);
   },
 
-  initCamICon: function() {
+  initCamIcon: function() {
     $('.js-cam').click(function() {
       console.log('clicked cam');
     });
