@@ -141,17 +141,44 @@
       </div>
     </div>
   </div>
-<!-- Modal 1 -->
+  <!-- Modal 1 -->
 <div class="modal fade" id="cam1Content" tabindex="-1" role="dialog" aria-labelledby="cam1Content" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <div>
+          <h5 class="modal-title text-info" id="exampleModalCenterTitle">WARNING</h5>
+        <h5><b>CROWD</b> Detected at <b>North Entrance</b> at <br> <b id="time2"></b></h5>
+        </div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <div class="row no-gutter">
+            <div class="col-12">
+              <img src="./assets/img/crowd.gif" alt="" class="w-100">
+            </div>
+            <div class="col-12">
+              <button type="button" class="btn btn-outline-danger w-100">Send Staff</button>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 2 -->
+<div class="modal fade" id="cam2Content" tabindex="-1" role="dialog" aria-labelledby="cam2Content" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div>
           <div>
-            <h5 class="modal-title" id="exampleModalCenterTitle" style="color: red">ALERT</h5>
+            <h5 class="modal-title text-danger" id="exampleModalCenterTitle">ALERT</h5>
           </div>
           <div>
-            <h5><b>RUBBISH</b> Detected at <b>South Entrance</b> at <b id="time1"></b></h5>
+            <h5><b>RUBBISH</b> Detected at <b>Center</b> at <br> <b id="time1"></b></h5>
           </div>
         </div>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -161,7 +188,9 @@
       <div class="modal-body">
         <div class="row no-gutters">
           <div class="col-7">
-            <img src="./assets/img/mall.gif" alt="">
+            <div class="px-3">
+              <img src="./assets/img/mall.gif" alt="" class="w-100">
+            </div>
           </div>
           <div class="col-5">
             <div class="row border rounded-lg shadow-sm bg-light no-gutters">
@@ -203,7 +232,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <div>
-        <h5><b>CROWD</b> Detected at <b>Center</b><br> at <b id="time2"></b></h5>
+        <h5><b>CROWD</b> Detected at <b>Center</b><at></at> <b id="time2"></></h5>
         </div>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
@@ -234,17 +263,13 @@
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalCenterTitle">Modal 3 title</h5>
+        <h5 class="modal-title" id="exampleModalCenterTitle">Testing...</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
         ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
       </div>
     </div>
   </div>
@@ -255,17 +280,13 @@
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalCenterTitle">Modal 4 title</h5>
+        <h5 class="modal-title" id="exampleModalCenterTitle">Testing...</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
         ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
       </div>
     </div>
   </div>
@@ -301,10 +322,10 @@
       // demo.initDashboardPageCharts();
       demo.initCamIcon();
       demo.initBindKey();
-      $('#cam1Content').on('shown.bs.modal', function(){
+      $('#cam2Content').on('shown.bs.modal', function(){
         $('#time1').text(getCurrentTime());
       });
-      $('#cam2Content').on('shown.bs.modal', function(){
+      $('#cam1Content').on('shown.bs.modal', function(){
         $('#time2').text(getCurrentTime());
       });
     });

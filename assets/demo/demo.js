@@ -477,7 +477,7 @@ demo = {
       } else if (e.which == 51) {
         // Cam 3
         $('.js-cam-3').click();
-      } else if (e.which == 52) {
+      } else if (e.which == 82) {
         // Cam 4
         window.location.href = 'http://localhost:3000';
       }  
