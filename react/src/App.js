@@ -9,32 +9,31 @@ import Settings from "./Settings";
 import Dashboard from "./Dashboard";
 import CameraDemo from './CameraDemo';
 
-import CameraDemo from "./CameraDemo";
-
 export default class App extends Component {
   render() {
     return (
       <Router>
-        {/* <div className="wrapper">
-          <SideBar />
-          <div className="main-panel" id="main-panel">
-            <NavBar />
+        {
+          <div className="wrapper">
+            <SideBar />
+            <div className="main-panel" id="main-panel">
+              <NavBar />
 
-            <Switch>
-              <Route exact path="/">
-                <CameraDemo />
-              </Route>
-              <Route exact path="/dashboard">
-                <Dashboard />
-              </Route>
-              <Route exact path="/settings">
-                <Settings />
-              </Route>
-            </Switch>
+              <Switch>
+                <Route exact path="/">
+                  <FloorPlan />
+                </Route>
+                <Route exact path="/dashboard">
+                  <Dashboard />
+                </Route>
+                <Route exact path="/settings">
+                  <Settings />
+                </Route>
+              </Switch>
+            </div>
           </div>
-        </div> */}
+        }
 
-        <CameraDemo />
       </Router>
     );
   }

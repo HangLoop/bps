@@ -4,20 +4,20 @@ export default class CameraDemo extends Component {
   render() {
     return (
       <>
-        <div style={{ display: "none" }}>
-          <div id="info" style={{ display: "none" }}></div>
-          <div id="loading" style={{ display: "flex" }}>
+        <div style={{ display: 'none' }}>
+          <div id="info" style={{ display: 'none' }}></div>
+          <div id="loading" style={{ display: 'flex' }}>
             <div class="spinner-text">Loading PoseNet model...</div>
             <div class="sk-spinner sk-spinner-pulse"></div>
           </div>
         </div>
-        <div id="main" style={{ display: "none" }}>
+        <div id="main" style={{ display: 'none', textAlign: 'center' }}>
           <video
             id="video"
             playsInline
             style={{
-              transform: "scaleX(-1)",
-              display: "none"
+              transform: 'scaleX(-1)',
+              display: 'none'
             }}
           ></video>
           <canvas id="output" />
