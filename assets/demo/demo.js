@@ -460,16 +460,27 @@ demo = {
   },
 
   initCamIcon: function() {
-    $(".js-cam").click(function() {
-      console.log("clicked cam");
+    $("[class*='js-cam']").click(function() {
+      console.log('clicked cam');
     });
   },
 
   initBindKey: function() {
       document.onkeyup = function(e) {
-      if (e.which == 77) {
+      
+      if (e.which == 49) {
+        // Cam 1
+        $('.js-cam-1').click();
+      } else if (e.which == 50) {
+        // Cam 2
+        $('.js-cam-2').click();
+      } else if (e.which == 51) {
+        // Cam 3
+        $('.js-cam-3').click();
+      } else if (e.which == 52) {
+        // Cam 4
         window.location.href = 'http://localhost:3000';
-      }
+      }  
     }
   }
 };

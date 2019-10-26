@@ -12,23 +12,23 @@ class SideBar extends Component {
           </div>
           <div className="sidebar-wrapper" id="sidebar-wrapper">
             <ul className="nav">
-              <li className={pathname === "/" ? "active" : ""}>
-                <Link to="/">
+              <li className="active ">
+                <a href="http://localhost:5501/index.html">
                   <i className="now-ui-icons location_map-big"></i>
                   <p>Floor Plan</p>
-                </Link>
+                </a>
               </li>
-              <li className={pathname === "/dashboard" ? "active" : ""}>
-                <Link to="/dashboard">
+              <li>
+                <a href="http://localhost:5501/pages/dashboard.html">
                   <i className="now-ui-icons design_app"></i>
                   <p>Dashboard</p>
-                </Link>
+                </a>
               </li>
-              <li className={pathname === "/settings" ? "active" : ""}>
-                <Link to="/settings">
+              <li>
+                <a href="http://localhost:5501/pages/settings.html">
                   <i className="now-ui-icons ui-1_settings-gear-63"></i>
                   <p>Settings</p>
-                </Link>
+                </a>
               </li>
             </ul>
           </div>
