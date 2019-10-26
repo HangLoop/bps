@@ -1,6 +1,17 @@
 import React, { Component } from 'react';
+import * as $ from 'jquery';
 
 export default class FloorPlan extends Component {
+  componentDidMount() {
+    $("button[type='button']").click(function() {
+      if ($(this).hasClass('disabledButton')) {
+        $(this).removeClass('disabledButton');
+      } else {
+        $(this).addClass('disabledButton');
+      }
+    });
+  }
+
   render() {
     return (
       <>
@@ -8,7 +19,6 @@ export default class FloorPlan extends Component {
           <div className="col-md-12">
             <div className="card  card-tasks">
               <div className="card-header ">
-                <!--<h5 className="card-category">Monitoring Options</h5>-->
                 <h4 className="card-title">Monitoring Options</h4>
               </div>
               <div className="card-body ">
