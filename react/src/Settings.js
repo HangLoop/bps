@@ -14,7 +14,7 @@ export default class FloorPlan extends Component {
 
   render() {
     return (
-      <>
+      <div className="content">
         <div className="row">
           <div className="col-md-12">
             <div className="card  card-tasks">
@@ -345,7 +345,7 @@ export default class FloorPlan extends Component {
             </div>
           </div>
         </div>
-      </>
+      </div>
     );
   }
 

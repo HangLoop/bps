@@ -14,10 +14,10 @@ export default class App extends Component {
         <SideBar />
         <div className="main-panel" id="main-panel">
           <NavBar />
-          <div className="panel-header panel-header-sm"></div>
-          <div className="content">
-            <Dashboard />
-          </div>
+          {/* <div className="panel-header panel-header-sm"></div> */}
+          {/* <div className="content"> */}
+          <Dashboard />
+          {/* </div> */}
         </div>
       </div>
     );
