@@ -143,20 +143,40 @@
   </div>
 <!-- Modal 1 -->
 <div class="modal fade" id="cam1Content" tabindex="-1" role="dialog" aria-labelledby="cam1Content" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalCenterTitle">Modal 1 title</h5>
+        <div>
+          <div>
+            <h5 class="modal-title" id="exampleModalCenterTitle" style="color: red">ALERT</h5>
+          </div>
+          <div>
+            <h5><b>RUBBISH</b> Detected at South Entrance</h5>
+          </div>
+        </div>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <div class="row no-gutter">
+          <div class="col-7">
+            <img src="./assets/img/mall.gif" alt="">
+          </div>
+          <div class="col-5">
+            <img src="./assets/img/sending-bot.png" alt="" class="w-100">
+          </div>
+          <div class="col-12">
+            <div class="row">
+              <div class="col-6">
+              </div>
+              <div class="col-6 text-right">
+                <button type="button" class="btn btn-outline-danger">Send Staff</button>
+                <button type="button" class="btn btn-outline-danger">Contact Police</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -243,7 +263,7 @@
       // Javascript method's body can be found in assets/js/demos.js
       // demo.initDashboardPageCharts();
       demo.initCamIcon();
-      
+      demo.initBindKey();
     });
   </script>
 </body>

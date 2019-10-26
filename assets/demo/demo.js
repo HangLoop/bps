@@ -463,5 +463,13 @@ demo = {
     $(".js-cam").click(function() {
       console.log("clicked cam");
     });
+  },
+
+  initBindKey: function() {
+      document.onkeyup = function(e) {
+      if (e.which == 77) {
+        window.location.href = 'http://localhost:3000';
+      }
+    }
   }
 };
