@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import FloorPlan from "./FloorPlan";
-import Settings from './Settings';
+import Settings from "./Settings";
 import NavBar from "./NavBar";
 import SideBar from "./SideBar";
 
