@@ -8,11 +8,13 @@ import FloorPlan from "./FloorPlan";
 import Settings from "./Settings";
 import Dashboard from "./Dashboard";
 
+import CameraDemo from "./CameraDemo";
+
 export default class App extends Component {
   render() {
     return (
       <Router>
-        <div className="wrapper">
+        {/* <div className="wrapper">
           <SideBar />
           <div className="main-panel" id="main-panel">
             <NavBar />
@@ -29,7 +31,9 @@ export default class App extends Component {
               </Route>
             </Switch>
           </div>
-        </div>
+        </div> */}
+
+        <CameraDemo />
       </Router>
     );
   }
