@@ -3,7 +3,6 @@ var path = require('path');
 var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 var sourcemaps = require('gulp-sourcemaps');
-var open = require('gulp-open');
 
 var Paths = {
   HERE: './',
@@ -25,10 +24,3 @@ gulp.task('compile-scss', function() {
 gulp.task('watch', function() {
   gulp.watch(Paths.SCSS, ['compile-scss']);
 });
-
-gulp.task('open', function() {
-  gulp.src('./index.html')
-    .pipe(open());
-});
-
-gulp.task('open-app', ['open', 'watch']);
