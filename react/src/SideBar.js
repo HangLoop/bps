@@ -8,7 +8,7 @@ class SideBar extends Component {
       <>
         <div className="sidebar" data-color="blue">
           <div className="logo">
-            <p className="simple-text">Behavior Protection System</p>
+            <p className="simple-text">Behavior Detection System</p>
           </div>
           <div className="sidebar-wrapper" id="sidebar-wrapper">
             <ul className="nav">
