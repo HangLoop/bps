@@ -3624,20 +3624,67 @@ Created using IcoMoon - icomoon.io
   position: relative;
   width: 738px; }
 
-.cam {
+@keyframes pop_image {
+  0% {
+    transform: scale(0, 0);
+    -ms-transform: scale(0, 0);
+    /* IE 9 */
+    -webkit-transform: scale(0, 0);
+    /* Safari and Chrome */
+    -o-transform: scale(0, 0);
+    /* Opera */
+    -moz-transform: scale(0, 0);
+    /* Firefox */ }
+  100% {
+    transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    /* IE 9 */
+    -webkit-transform: scale(1, 1);
+    /* Safari and Chrome */
+    -o-transform: scale(1, 1);
+    /* Opera */
+    -moz-transform: scale(1, 1);
+    /* Firefox */ } }
+
+.sensor {
   position: absolute;
-  cursor: pointer; }
-  .cam--1 {
+  cursor: pointer;
+  height: 68px;
+  width: 68px;
+  background-repeat: no-repeat;
+  background-position: center; }
+  .sensor--1 {
     top: 1rem;
     left: 10rem; }
-  .cam--2 {
+  .sensor--2 {
     top: 19rem;
     left: 26rem; }
-  .cam--3 {
+  .sensor--3 {
     top: 12rem;
     left: 40rem; }
-  .cam--4 {
+  .sensor--4 {
     top: 26rem;
     left: 3rem; }
+
+.warning {
+  background: url("/assets/img/icon/warning.svg");
+  animation-delay: 0s;
+  animation-timing-function: cubic-bezier(0, 0, 0.35, 1);
+  transform: translateZ(0);
+  animation-duration: 1s;
+  animation-name: pop_image;
+  animation-iteration-count: 99;
+  -webkit-animation-delay: 0s;
+  -webkit-animation-timing-function: cubic-bezier(0, 0, 0.35, 1);
+  -webkit-transform: translateZ(0);
+  -webkit-animation-duration: 1s;
+  -webkit-animation-name: pop_image;
+  -webkit-animation-iteration-count: 99; }
+
+.mic {
+  background: url("/assets/img/icon/mic.svg"); }
+
+.cam {
+  background: url("/assets/img/icon/camera.svg"); }
 
 /*# sourceMappingURL=now-ui-dashboard.css.map */
