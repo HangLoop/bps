@@ -133,6 +133,8 @@
             </div>
             <div class="sensor mic sensor--4 js-cam-4" data-toggle="modal" data-target="#cam4Content">
             </div>
+            <div class="sensor bot sensor--5" data-toggle="modal" data-target="#botContent">
+            </div>
           </div>
         </div>
       </div>
@@ -144,7 +146,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <div>
-          <h5 class="modal-title text-info" id="exampleModalCenterTitle">WARNING</h5>
+          <h5 class="modal-title text-info" >WARNING</h5>
         <h5><b>CROWD</b> Detected at <b>North Entrance</b> at <br> <b id="time2"></b></h5>
         </div>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -172,7 +174,7 @@
       <div class="modal-header">
         <div>
           <div>
-            <h5 class="modal-title text-danger" id="exampleModalCenterTitle">ALERT</h5>
+            <h5 class="modal-title text-danger" >ALERT</h5>
           </div>
           <div>
             <h5><b>RUBBISH</b> Detected at <b>Center</b> at <br> <b id="time1"></b></h5>
@@ -261,7 +263,7 @@
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalCenterTitle">
+        <h5 class="modal-title" >
           <div class="spinner-grow" role="status">
           <span class="sr-only">...</span>
         </div>Recording...</h5>
@@ -289,7 +291,7 @@
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalCenterTitle">
+        <h5 class="modal-title" >
           <div class="spinner-grow" role="status">
           <span class="sr-only">...</span>
         </div>Recording...</h5>
@@ -306,6 +308,29 @@
         </div>
         <div class="spinner-border" role="status">
           <span class="sr-only">Loading...</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 5 -->
+<div class="modal fade" id="botContent" tabindex="-1" role="dialog" aria-labelledby="botContent" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" >
+          Bot 1 status</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-6">Battery:</div>
+          <div class="col-6">90%</div>
+          <div class="col-6">Kit:</div>
+          <div class="col-6">First-aid, Cleaning</div>
         </div>
       </div>
     </div>

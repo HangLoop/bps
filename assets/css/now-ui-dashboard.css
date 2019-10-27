@@ -3666,6 +3666,13 @@ Created using IcoMoon - icomoon.io
     top: 26rem;
     left: 3rem; }
 
+.bot {
+  background: url("/assets/img/bot.png");
+  width: 32px;
+  height: 32px;
+  top: 0;
+  right: 0; }
+
 .warning {
   background: url("/assets/img/icon/warning.svg");
   animation-delay: 0s;
